@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "../ComponentStyles/PostMessage.css";
-import CameraIndoorTwoToneIcon from "@mui/icons-material/CameraIndoorTwoTone";
+import VideocamOutlinedIcon from "@mui/icons-material/VideocamOutlined";
 import PhotoLibraryOutlinedIcon from "@mui/icons-material/PhotoLibraryOutlined";
 import EmojiEmotionsOutlinedIcon from "@mui/icons-material/EmojiEmotionsOutlined";
 
 export default function PostMessage({ profileImg }) {
+  const [inputText, setInputText] = useState("");
+
   const HandleSubmit = (event) => {
     event.preventDefault();
-    alert("Post is entered.");
+    alert("You posted something.");
   };
+
   return (
     <div
       style={{
@@ -24,6 +27,10 @@ export default function PostMessage({ profileImg }) {
           className="input_field"
           placeholder="What's on your mind?"
           type="text"
+          value={inputText}
+          onChange={(e) => {
+            setInputText(e.target.value);
+          }}
         />
         <button className="submit_btn" type="submit" onClick={HandleSubmit}>
           Hidden Button
@@ -31,7 +38,7 @@ export default function PostMessage({ profileImg }) {
       </form>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div style={{ color: "red", paddingLeft: "8px" }}>
-          <CameraIndoorTwoToneIcon />
+          <VideocamOutlinedIcon />
           <p style={{ color: "grey", fontWeight: "bold" }}>Live video</p>
         </div>
         <div style={{ color: "green", paddingLeft: "8px" }}>
@@ -46,7 +53,3 @@ export default function PostMessage({ profileImg }) {
     </div>
   );
 }
-
-/* //  <div className="source">
-  //
-</div> */
