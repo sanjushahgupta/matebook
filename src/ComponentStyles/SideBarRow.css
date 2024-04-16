@@ -1,0 +1,16 @@
+.sidebar-row {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  color: #2e81f4;
+}
+
+.row-text {
+  color: black;
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.sidebar-row:hover {
+  background-color: rgb(167, 164, 161);
+}

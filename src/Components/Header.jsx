@@ -6,6 +6,7 @@ import PeopleIcon from "@mui/icons-material/People";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { colors } from "@mui/material";
+import "../ComponentStyles/Header.css";
 
 function Header() {
   return (
