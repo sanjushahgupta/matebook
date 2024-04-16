@@ -12,7 +12,6 @@ function App() {
       <div className="Container">
         <LeftSideBar />
         <MainFeed />
-        <RightSideBar />
       </div>
     </div>
   );
