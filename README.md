@@ -4,10 +4,11 @@ An application inspired by the Facebook UI for posting messages and photos.
 
 ## Features
 
-- Post message
+- Post messages
 - Display photos
 
 ## Screenshots
+<img width="1419" alt="mateBookDemo" src="https://github.com/sanjushahgupta/matebook/assets/71315276/b6c0cfea-0ceb-422e-b981-acdd8c5c0a66">
 
 ## Built with
 
