@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import LeftSideBar from "./Components/LeftSideBar";
-import RightSideBar from "./Components/RightSideBar";
 import MainFeed from "./Components/MainFeed";
 import Header from "./Components/Header";
 

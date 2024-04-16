@@ -1,7 +1,6 @@
 .post_message {
   display: flex;
   padding: 10px;
-  background-color: aqua;
   width: 300px;
   margin: 0px 20px;
 }
